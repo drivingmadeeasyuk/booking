@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DrivingMadeEasyUK – Book a Lesson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #F8F2E9;
+        padding: 20px;
+        color: #0A1A2F;
+    }
+    .container {
+        max-width: 480px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    .logo {
+        display: block;
+        width: 160px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #0A1A2F;
+    }
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #E63946;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        opacity: 0.9;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <img src="logo.png" class="logo">
+
+    <h1>Book a Driving Lesson</h1>
+
+    <form action="https://formspree.io/f/xldvnrrz" method="POST">
+        
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>WhatsApp Number</label>
+        <input type="text" name="phone" required>
+
+        <label>Email (optional)</label>
+        <input type="email" name="email">
+
+        <label>Preferred Transmission</label>
+        <select name="transmission" required>
+            <option value="">Select…</option>
+            <option>Manual</option>
+            <option>Automatic</option>
+        </select>
+
+        <label>Date</label>
+        <label>Preferred Date</label>
+<select name="date" required>
+    <option value="">Select a date...</option>
+
+
+    <!-- January -->
+    <option>9 January 2026</option>
+    <option>10 January 2026</option>
+    <option>11 January 2026</option>
+    <option>12 January 2026</option>
+    <option>20 January 2026</option>
+    <option>21 January 2026</option>
+    <option>22 January 2026</option>
+    <option>30 January 2026</option>
+    <option>31 January 2026</option>
+
+    <!-- February -->
+    <option>1 February 2026</option>
+    <option>7 February 2026</option>
+    <option>8 February 2026</option>
+    <option>10 February 2026</option>
+    <option>11 February 2026</option>
+    <option>12 February 2026</option>
+    <option>18 February 2026</option>
+    <option>19 February 2026</option>
+    <option>20 February 2026</option>
+    <option>21 February 2026</option>
+    <option>22 February 2026</option>
+    <option>23 February 2026</option>
+	<option>28 February 2026</option>
+   
+    <!-- March -->
+    <option>3 March 2026</option>
+    <option>4 March 2026</option>
+    <option>5 March 2026</option>
+    <option>13 March 2026</option>
+    <option>14 March 2026</option>
+    <option>15 March 2026</option>
+    <option>16 March 2026</option>
+    <option>24 March 2026</option>
+    <option>25 March 2026</option>
+    <option>26 March 2026</option>
+    
+</select>
+
+
+        <label>Time Slot (2 hours)</label>
+        <select name="slot" required>
+            <option value="">Select…</option>
+            <option>10:00 – 12:00</option>
+            <option>12:00 – 14:00</option>
+            <option>14:00 – 16:00</option>
+            <option>16:00 – 18:00</option>
+            <option>Sunday: 14:00 – 16:00</option>
+            <option>Sunday: 16:00 – 18:00</option>
+        </select>
+
+        <label>Pickup Location</label>
+        <textarea name="location" required></textarea>
+
+        <label>Notes (optional)</label>
+        <textarea name="notes"></textarea>
+	
+	<p style="background:#FFF3CD; padding:10px; border-radius:8px; border:1px solid #FFCC00; color:#7A5B00; font-size:0.9rem;">
+    <strong>Important:</strong> Payment must be made before the driving lesson can commence. 
+    Your booking will remain <strong>PENDING CONFIRMATION</strong> until payment is received.
+	</p>
+
+        <button type="submit">Submit Booking</button>
+
+    </form>
+
+    <div class="footer">@DrivingMadeEasyUK</div>
+</div>
+
+</body>
+</html>
+
